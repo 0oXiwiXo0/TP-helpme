@@ -9,7 +9,7 @@ app.use(express.static("public"));
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
-let message = "Liste des tickets";
+let message = "Tickets";
 
 app.get("/", (req, res) => {
   res.render("home", {
