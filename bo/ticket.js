@@ -1,16 +1,10 @@
 class Ticket {
-  constructor(id, auteur, titre, description) {
-    if (!auteur) throw new Error("Auteur obligatoire");
-    if (!titre) throw new Error("Titre obligatoire");
-    if (titre.length > 50) throw new Error("Titre trop long");
-    if (description && description.length > 2000)
-      throw new Error("Description trop longue");
-
+  constructor(id, auteur, titre, description, creation, etat) {
     this.id = id;
     this.auteur = auteur;
     this.titre = titre;
     this.description = description;
-    this.dateCreation = new Date().toLocaleString("fr-FR");
+    this.creation = new Date();
     this.etat = "ouvert";
   }
 }
