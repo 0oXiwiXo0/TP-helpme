@@ -32,3 +32,10 @@ header nav a {
   text-decoration: none; /* pour enlever le soulignement */
   margin-left: 1em; /* espace entre les liens */
 }
+
+footer {
+  width: 100%;
+  background-color: rgb(30, 64, 175);
+  padding: 1em 0;
+  text-align: center;
+}
