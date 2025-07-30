@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 let message = "Tickets";
 
 app.get("/", (req, res) => {
-  res.render("home", {
+  res.render("liste-tickets", {
     message: message,
   });
 });
